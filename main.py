@@ -50,8 +50,9 @@ def main():
         print("Tomorrow is a new day, I hope it is good.")
     else: 
       print("That sounds good! I hope it stays like that.") 
+    print("\n")
     #Asking user thier favorite movie
-    movie = input("What is your favorite movie ")
+    movie = input("What is your favorite movie? ")
     if (movie == ("Harry Potter")):
       print("What a small world, that is my favorite movie too!")     
     elif (movie== ("Marvel")):
@@ -74,12 +75,22 @@ def main():
     else: 
       print("That is not an age!")
     #second line
-    color = input("What are you doing?:")
-    wyd
-    wyd_list = ["Oh ok", "cool", "Nice"]
-    print(random.choice(wyd_list))
+    print("\n")
 
-
+    color = input("What is your favorite color?")
+    color
+    color_suggestion= ["That is a cool color!", "Not my favorite but nice pick!", "That's cool!"]
+    print(random.choice(color_suggestion))
+    print("\n")
+    sport = input("What is your favorite sport?")
+    sport
+    sport_suggestion= ["I had a friend that played that sport!", "Not my favorite but nice pick!", "I love that sport too!"]
+    print(random.choice(sport_suggestion))
+    print("\n")
+    question = input("What are you doing?")
+    question
+    question_sug= ["Nice!", "Cool!" , "Relaxing!"]
+    print(random.choice(question_sug))
 if __name__ == "__main__":
     main()
     t = input("Run pytest? (y/n)").lower()
