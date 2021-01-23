@@ -1,7 +1,7 @@
 """
 Chatbot
-Author: 
-Period/Core: 
+Author:  Lillian Schofield
+Period/Core: Core 2
 
 """
 
@@ -29,10 +29,11 @@ def main():
     print("Hello!")
     #Introduction
     greeting = input("Hi, I am your virtual chatbot, I am here to talk to you today! What is your name?")
-    
+    #Using if/else statements this is going to ask the user how thier day has been. Random has been incoperated into some of the outputs. 
     print("\n")
-    hello = input("Hello,"+ greeting+"!\n Your name is so unique! How have you been recently? ")
+    hello = input("Hello,"+ greeting+"!\nYour name is so unique! How have you been recently? ")
     if (hello == ("Good")):
+      #After the user types in good, the computer will output a series of random outputs. 
       random1= random.randint(1,3)
       if (random1 == 1):
         print("That is great! I'm glad it is going good.")
@@ -41,6 +42,7 @@ def main():
       if(random1 == 3):
         print("Yay! I hope it continues like that!")
     elif (hello == ("Bad")):
+      #After the user types in bad, the computer will output a series of random outputs. 
       random1= random.randint(1,3)
       if (random1 == 1):
         print("I'm sorry, bad days are the worst!")
@@ -57,6 +59,7 @@ def main():
       print("What a small world, that is my favorite movie too!")     
     elif (movie== ("Marvel")):
       sorry = input("That's crazy! I love the marvel movies too! ")
+      #typically the user will not choose the two options above, this gives them the option of the computer randomly outputting their input to the user's input. 
     else:
       random1= random.randint(1,3)
       if (random1 == 1):
@@ -66,7 +69,7 @@ def main():
       if(random1 == 3):
         print("A friend told me about that movie! I will have to get around to see that!")
     print("\n")
-    #asks user about their age
+    #asks user about their age and pending on what they say, the computer will output accordingly to the age
     hello = int(input("How old are you?"))
     if hello>=18:
       print("Wow that's old! \nYou're an adult!")
@@ -76,6 +79,7 @@ def main():
       print("That is not an age!")
     #second line
     print("\n")
+    #On the next three, using random, the user will input their input and the computer will output a random output in response. 
 
     color = input("What is your favorite color?")
     color
