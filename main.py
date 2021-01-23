@@ -36,9 +36,25 @@ if __name__ == "__main__":
     if t == 'y':
         run_tests()
 
+  
 
-print("Hello!")
+#Introduction
+movie = input("What is your favorite movie ")
+if (movie == ("Harry Potter")):
+  print("What a small world, that is my favorite movie too!")     
+elif (movie== ("Marvel")):
+  sorry = input("That's crazy! I love the marvel movies too! ")
+else:
+    random1= random.randint(1,3)
+    if (random1 == 1):
+      print("Woah, that sounds like a good movie, I will have to check that out sometime!")
+    if (random1 == 2):
+        print("Even though it is not one of my favorites, that is a good movie!")
+    if(random1 == 3):
+      print("A friend told me about that movie! I will have to get around to see that!")
 
+
+  
 #first line 
 hello = int(input("How old are you?"))
 
@@ -58,6 +74,6 @@ if hello=="Good":
 
   print("That is great! \nI'm glad you're doing good.")
 
-elif hello== "Bad": 
+elif hello== "Bad":  
 
   print("Oh no, I'm sorry! \nI hope it gets better.") 
